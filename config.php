@@ -1,9 +1,9 @@
 <?PHP
- date_default_timezone_set("Asia/Bangkok");
-$servername = "https://smartfarm2018.eu-gb.mybluemix.net";
-$username = "root";
-$password = "root";
-$dbname = "farm";
+date_default_timezone_set("Asia/Bangkok");
+$servername = "sql12.freemysqlhosting.net";
+$username = "sql12231556";
+$password = "g4jKazTtnX";
+$dbname = "sql12231556";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

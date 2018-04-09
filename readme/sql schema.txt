@@ -1,0 +1,21 @@
+CREATE TABLE farm_data (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+farm_id VARCHAR(30) NOT NULL,
+timestamp TIMESTAMP NOT NULL,
+soil_moisture VARCHAR(30) NOT NULL,
+humidity VARCHAR(30) NOT NULL,
+temp VARCHAR(30) NOT NULL
+) 
+
+
+ALTER TABLE farm_name
+  ADD farm_id VARCHAR(50);
+  
+CREATE TABLE farm_name (
+farm_id VARCHAR(30) NOT NULL,
+farm_name VARCHAR(30) NOT NULL,
+farm_city VARCHAR(30) NOT NULL,
+farm_state VARCHAR(30) NOT NULL
+)
+insert into farm_name values('999','Field 1','Raipur','Chattisgarh');
+insert into farm_name values('998','Field 2','Raipur','Chattisgarh');

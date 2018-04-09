@@ -26,7 +26,7 @@ switch ($format) {
 		{
 			$emparray[] = $row;
 		}
-		$filename='downloads/'.substr(md5(date("h:i:sa").date("Y-m-d")),-10).'.json';
+		$filename=substr(md5(date("h:i:sa").date("Y-m-d")),-10).'.json';
 		$fp = fopen($filename, 'w');
 		fwrite($fp, json_encode($emparray));
 		fclose($fp);
@@ -85,7 +85,7 @@ switch ($format) {
 			}
 			$root->appendChild( $node );
 		}
-		$filename = 'downloads/'.substr(md5(date("h:i:sa").date("Y-m-d")),-10).'.xml';
+		$filename = substr(md5(date("h:i:sa").date("Y-m-d")),-10).'.xml';
 		$dom->save( $filename );
 		
 		$file = $filename;
